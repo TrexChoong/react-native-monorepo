@@ -6,6 +6,7 @@ import {
   View,
   Text,
   StatusBar,
+  Image,
 } from 'react-native';
 
 import {
@@ -16,6 +17,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {colors} from 'theme';
+import Brew9 from 'theme/Brew9/index';
 
 const App = () => {
   return (
@@ -33,6 +35,7 @@ const App = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+            {Brew9.getLogo()}
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
